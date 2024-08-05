@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form action="">
+            <div class="logo">
+                <img src="./undraw_pic_profile_re_7g2h.svg" class="logo">
+            </div>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" required>
+                <label>Username</label>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" required id="password">
+                <label>Password</label>
+                <p id="message">Password is</p>
+                <img src="./eyeicon.png" id="eyeicon"/>
+                
+            </div>
+
+            <div class="remember-forgot">
+                <label> <input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password ?</a>
+            </div>
+
+            <button class="btn" type="submit" onclick="openPopup()">Login</button>
+            <div class="popup" id="popup">
+                <img class="imgs" src="./404-tick.png">
+                <h2>Thank You!</h2>
+                <p>Your details has been submitted successufully. Thanks!</p>
+                <button class="button" onclick="closePopup()">OK</button>
+            </div>
+
+            <div class="register-link">
+                <p>Don't have an account ? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
